@@ -1,12 +1,10 @@
 # PROJECT DEFINITION
 # Use Netflix data to analyze the watching time during Covid year (2020) and prior to Covid (2019)
 # including some data from years since opening the accounts
-# Create an interactive dialogue with user giving the below options (OPTION 1-6)
+# Create an interactive dialogue with user giving the below options (OPTION 1-7)
 # The user shall select what they want to know and info shall be printed
 # After each call, we shall ask the user if they want to query any further and print options.
 # Print message when the user no longer wants to query.
-# Each row of reader is a dictionary containing the value for each key (column)
-# Example of a row: {'Profile Name': 'Jordi&Sara', 'Start Time': '2014-08-26 16:50:25', 'Duration': '00:22:39', 'Attributes': '', 'Title': 'The Office (U.S.): Season 1: Pilot (Episode 1)', 'Supplemental Video Type': '', 'Device Type': 'PC', 'Bookmark': '00:22:38', 'Latest Bookmark': '00:22:38', 'Country': 'GB (United Kingdom)'}
 
 from ShowAnalysis import *
 
