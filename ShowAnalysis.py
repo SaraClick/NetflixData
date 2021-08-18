@@ -80,22 +80,16 @@ def watched_comparison(user1, user2):
 # OPTION 3 TEST:
 # print(watched_comparison("Angela", "Jordi&Sara")[1])
 
-# OPTION 4: Total watch time by user in Days, Hours, Minutes.
-def time_sum(time_list):
-    mysum = datetime.timedelta()
-    for i in time_list:
-        (h, m, s) = i.split(':')
-        d = datetime.timedelta(hours=int(h), minutes=int(m), seconds=int(s))
-        mysum += d
-    return mysum
 
+# OPTION 4: Total watch time by user in Days, Hours, Minutes.
 def watched_time(user):
     # Create a list for each user watch time
-    time_list = []
+    time_list_user = []
     for i in range(len(duration_list)):
         if user_list[i] == user:
-            time_list.append(duration_list[i])
-    return time_list
+            time_list_user.append(duration_list[i])
+    return time_list_user
+
 
 def time_sum(list_of_times):
     mysum = datetime.timedelta()
